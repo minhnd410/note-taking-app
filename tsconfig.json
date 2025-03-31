@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/interface-e2e"
+    },
+    {
+      "path": "./apps/interface"
+    },
+    {
+      "path": "./apps/backend-e2e"
+    },
+    {
+      "path": "./apps/backend"
+    }
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {}
+  }
+}

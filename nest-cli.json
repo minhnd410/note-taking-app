@@ -1,0 +1,29 @@
+{
+  "monorepo": true,
+  "root": "apps/note-taking-app-source",
+  "sourceRoot": "apps/note-taking-app-source/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/note-taking-app-source/tsconfig.app.json"
+  },
+  "projects": {
+    "note-taking-app-source": {
+      "type": "application",
+      "root": "apps/note-taking-app-source",
+      "entryFile": "main",
+      "sourceRoot": "apps/note-taking-app-source/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/note-taking-app-source/tsconfig.app.json"
+      }
+    },
+    "backend": {
+      "type": "application",
+      "root": "apps/backend",
+      "entryFile": "main",
+      "sourceRoot": "apps/backend/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/backend/tsconfig.app.json"
+      }
+    }
+  }
+}
